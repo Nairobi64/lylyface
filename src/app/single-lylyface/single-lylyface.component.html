@@ -1,0 +1,14 @@
+<div class="lyly-card" [ngClass]="{ snapped : textBoutton === 'liked'}">
+
+    <h2>{{ lylynice.title | uppercase }}</h2>
+    <a routerLink="/lylynicex">Back</a>
+    <img [src]="lylynice.ImageUrl" [alt]="lylynice.title">
+<p>{{ lylynice.description }}</p>
+<p>Mise en ligne le: {{ lylynice.createDate | date: 'dd/MM/yy, à HH:mm' }}</p>
+<p *ngIf="lylynice.Location">Depuis: {{ this.lylynice.Location }}</p>
+<p>
+    <button (click)="onlike()"> {{ textBoutton }} </button>
+    <span [ngStyle]="{color:'rgb(0,'+lylynice.like +',0)'}">{{ lylynice.like }}</span>
+</p>
+
+</div>
