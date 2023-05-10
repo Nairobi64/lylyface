@@ -7,21 +7,21 @@ import { lylynice } from "../models/lyly-nice.models";
 
 export  class lylyNiceService {
 
-    lylynicex : lylynice[] =  [
+   lylynicex : lylynice[] =  [
         {
           id: 1,
-          title: 'Archibald',
-          description: 'Mon meilleur ami depuis tout petit !',
-          ImageUrl: 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
+          title: 'Pain croissant',
+          description: 'Le meilleur du petit dejeuné fait maison pain-croissant.',
+          ImageUrl: 'assets/pain-croissant.jpg',
           createDate: new Date(),
           like: 200,
-          Location : "Libreville"
+          Location : "Dakar"
         },
         {
           id: 2,
-          title: 'Three Rock Mountain',
-          description: 'Un endroit magnifique pour les randonnées.',
-          ImageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Three_Rock_Mountain_Southern_Tor.jpg/2880px-Three_Rock_Mountain_Southern_Tor.jpg',
+          title: 'Tiramissu',
+          description: 'Hmm, que c\'est bon les recette de lyly',
+          ImageUrl: 'assets/Tiramissu-verre.jpg',
           createDate: new Date(),
           like: 0
         },

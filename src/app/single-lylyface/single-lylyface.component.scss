@@ -1,8 +1,22 @@
 .lyly-card {
     width: 35%;
     img {
+      height: 800px;
       width: 100%;
     }
+  }
+  .back{
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border: none;
+    box-shadow: lightgray 3px 3px 7px;
+    margin-left: 200px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
   }
 
   .lyly-card {
@@ -35,3 +49,4 @@
       }
     }
   }
+  

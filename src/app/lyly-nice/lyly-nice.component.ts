@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { lylynice } from '../models/lyly-nice.models';
 import { lylyNiceService } from '../services/lyly-nice.service';
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./lyly-nice.component.scss']
 })
 export class LylyNiceComponent implements OnInit {
-   lylynice! : lylynice;
+@Input()   lylynice! : lylynice;
 textBoutton!: string;
 
 constructor( private lylyNiceService: lylyNiceService,
@@ -32,9 +32,12 @@ ngOnInit(){
     this.textBoutton = "like";
    }
  }
-  OnViewlylynice(){
-    this.router.navigateByUrl(`lylynicex/${this.lylynice.id}`);
+    onViewlylynice(){
+      this.router.navigateByUrl(`lylynicex/${this.lylynice.id}`);
   }
   
-
+ 
+    
 }
+
+
